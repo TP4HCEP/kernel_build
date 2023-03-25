@@ -21,7 +21,7 @@ jobs:
 
       - name: Pull toolchain
         run: |
-          git clone --depth=1 https://github.com/mvaisakh/gcc-arm64.git aarch64-gnu-android-4.9
+          git clone --depth=1 https://github.com/mvaisakh/gcc-arm64.git aarch64-linux-gnu-4.9
           git clone --depth=1 https://github.com/mvaisakh/gcc-arm $KERNEL_DIR/gcc32 arm-linux-gnueabi-4.9
           mkdir clang && wget https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86/+archive/refs/heads/master/clang-r487747.tar.gz && tar -C clang/ -zxvf clang-*.tar.gz
 
